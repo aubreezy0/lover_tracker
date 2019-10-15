@@ -32,7 +32,9 @@
                             <outlet property="delegate" destination="jLh-Ug-rqC" id="iY1-qd-8T1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="The Love Tracker" id="ECF-W4-6xC"/>
+                    <navigationItem key="navigationItem" title="The Love Tracker" id="ECF-W4-6xC">
+                        <barButtonItem key="rightBarButtonItem" title="Loves Me!" id="g6e-Ju-RrA"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xr3-k2-HIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
