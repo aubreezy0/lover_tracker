@@ -17,8 +17,7 @@ class Love_TVC: UITableViewController {
     }
 
     func getLoves() {
-        if let context = (UIApplication.shared.delegate as? AppDelegate) {
-            //fetch here
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             
             tableView.reloadData()
         }
@@ -26,12 +25,21 @@ class Love_TVC: UITableViewController {
     
     @IBAction func loveTapped(_ sender: Any) {
         // ADD object
+        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
         getLoves()
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // DELETE object
-        getLoves()
+        let selectedLove = allLoves[indexPath.row]
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            context.delete(selectedLove)
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            getLoves()
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
