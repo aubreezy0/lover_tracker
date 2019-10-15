@@ -12,6 +12,7 @@
 		C0175F0A235636A500CDFA03 /* The_Love_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0175F08235636A500CDFA03 /* The_Love_Tracker.xcdatamodeld */; };
 		C0175F0C235636A700CDFA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0175F0B235636A700CDFA03 /* Assets.xcassets */; };
 		C0175F0F235636A700CDFA03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0175F0D235636A700CDFA03 /* LaunchScreen.storyboard */; };
+		C0175F18235640B900CDFA03 /* Love_TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0175F17235640B900CDFA03 /* Love_TVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C0175F0E235636A700CDFA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0175F10235636A700CDFA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0175F16235637FA00CDFA03 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C0175F17235640B900CDFA03 /* Love_TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love_TVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				C0175F01235636A500CDFA03 /* AppDelegate.swift */,
 				C0175F05235636A500CDFA03 /* Main.storyboard */,
+				C0175F17235640B900CDFA03 /* Love_TVC.swift */,
 				C0175F0B235636A700CDFA03 /* Assets.xcassets */,
 				C0175F0D235636A700CDFA03 /* LaunchScreen.storyboard */,
 				C0175F10235636A700CDFA03 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0175F18235640B900CDFA03 /* Love_TVC.swift in Sources */,
 				C0175F0A235636A500CDFA03 /* The_Love_Tracker.xcdatamodeld in Sources */,
 				C0175F02235636A500CDFA03 /* AppDelegate.swift in Sources */,
 			);
