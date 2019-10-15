@@ -13,19 +13,25 @@ class Love_TVC: UITableViewController {
     var allLoves : [Love] = []
     
     override func viewWillAppear(_ animated: Bool) {
-        // call function
+        getLoves()
     }
 
     func getLoves() {
-        // FETCH objects
+        if let context = (UIApplication.shared.delegate as? AppDelegate) {
+            //fetch here
+            
+            tableView.reloadData()
+        }
     }
     
     @IBAction func loveTapped(_ sender: Any) {
         // ADD object
+        getLoves()
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // DELETE object
+        getLoves()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,9 +41,10 @@ class Love_TVC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = UITableViewCell()
 
-        // Configure the cell...
+        let selectedLove = allLoves[indexPath.row]
+        cell.textLabel?.text = selectedLove.name
 
         return cell
     }
