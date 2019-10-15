@@ -10,13 +10,27 @@ import UIKit
 
 class Love_TVC: UITableViewController {
 
+    var allLoves : [Love] = []
+    
     override func viewWillAppear(_ animated: Bool) {
         // call function
     }
 
+    func getLoves() {
+        // FETCH objects
+    }
+    
+    @IBAction func loveTapped(_ sender: Any) {
+        // ADD object
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // DELETE object
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+
+        return allLoves.count
     }
 
     

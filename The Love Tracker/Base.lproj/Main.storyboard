@@ -33,7 +33,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="The Love Tracker" id="ECF-W4-6xC">
-                        <barButtonItem key="rightBarButtonItem" title="Loves Me!" id="g6e-Ju-RrA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Loves Me!" id="g6e-Ju-RrA">
+                            <connections>
+                                <action selector="loveTapped:" destination="jLh-Ug-rqC" id="45d-HS-mU7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xr3-k2-HIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
